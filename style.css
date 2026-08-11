@@ -1,17 +1,28 @@
-h1 {
-    color: blue;
-    font-size: 4em;
+.box {
+    display: inline-block;
+    padding: 30px;
+    width: 100px;
+    margin: 30px;
+    border: 3px solid black;
 }
 
-.highlight {
-    background-color: yellow;
-    padding: 30px;
-    border: 7px solid red;
-    margin: 40px;
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 4px solid black;
 }
 
-.container {
-    padding: 30px;
-    border: 7px solid red;
-    margin: 40px;
+.badge {
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+.back-to-top {
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: red;
 }
