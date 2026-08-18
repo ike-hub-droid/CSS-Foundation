@@ -1,22 +1,46 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.cards {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
+.page{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+grid-template-rows: auto 1fr auto;
+grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
 }
 
-.card {
-    border: 10px solid #ccc;
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+    box-sizing: border-box;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.header,
+.sidebar,
+.main,
+.footer {
     padding: 20px;
+    border: 1px solid black;
 }
-
+.header {
+    background-color: lightblue;
+}
+.sidebar {
+    background-color: lightgreen;
+}
+.main {
+    background-color: lightyellow;
+}
+.footer {
+    background-color: lightcoral;
+}
