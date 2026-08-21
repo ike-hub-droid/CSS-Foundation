@@ -1,11 +1,24 @@
 .page{
     display: grid;
-    grid-template-columns: 200px 1fr;
-grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+
 grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
+    "header"
+    "sidebar" 
+    "main"
+    "footer";
+}
+@media (min-width: 768px) {
+    
+.page {
+        grid-template-columns: 200px 1fr;
+
+        grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+    }
+
 }
 
 .header {
